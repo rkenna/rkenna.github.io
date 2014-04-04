@@ -1,0 +1,321 @@
+/* COLOR SCHEME
+navbar color-#736F61
+leaf logo color- #736939
+green color- #707361
+mauve color- #8C7365
+*/
+
+body {background-color: #F7F7F7;
+	width: 90%; 
+	margin: auto;
+
+}
+
+.container {
+	padding: 10px 20px;
+}
+
+.logo { float: left;
+
+}
+
+
+.navbar-header {padding-top: 40px;
+				font-size: 1.1em; 
+				float: right;
+
+}
+
+a { color: #736F61;
+
+}
+
+a:hover,
+a:focus {
+  color: #736F61;
+  text-decoration: none;
+}
+
+h1	{ margin: 0px;
+
+}
+
+h2	{font-size: 70px;
+	padding-top: 225px;
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+	margin: auto;
+	text-align: center;
+	height: 100%;
+}
+
+#feature-text { width: 100%;
+
+}
+
+
+
+#feature-image {background-image: url("https://farm2.staticflickr.com/1125/754753208_d8ccab327d_o.jpg"); 
+				background-position: 0px 0px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: visible;
+				margin-right: -5.55%;
+				margin-left: -5.55%;
+				height: 540px;
+}
+
+
+footer	{ padding: 10px 20px; 
+
+}
+
+.social {float: right; margin: 0 10px;
+}
+
+
+
+
+/**********************************
+OFFERINGS
+***********************************/
+
+a:link {
+	color: #707361; text-decoration:none
+}
+
+.offerings-container {
+	padding-top: 1%;
+	position: relative;
+	margin-bottom: auto;
+	float: center;
+}
+
+.tabs {
+	position: relative;
+	min-height: 390px;
+	clear: both;
+}
+
+.tab {
+	float: left;
+}
+
+.tab label {
+	background: #E8E8E8;
+	padding: 5px;
+	border: 0px solid #5B3621;
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+	color: #736F61;
+	border-radius: 15px;
+	font-size: 1.1em;
+}
+
+.tab [type=radio] {
+  display: none; /*we don't want the radio buttons to actually show, so this hides them*/  
+}
+
+.content {
+  font-size: 1.1em;
+  position: absolute; /*this being set at absolute makes it difficult. need to change this, but when i do the tabs don't work anymore*/
+  top: 37px;
+  left: 0;
+  background: white;
+  right: 0;
+  padding: 20px;
+  border: 0px solid #5B3621;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  color: black;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2; /*This z-index must be bigger than the contents' z-index in order to get the look of a tab*/
+}
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+.pricing {
+	position: relative;
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+	color: #736F61;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	font-size: 1em;
+}
+
+hr {
+	border-color: #736F61;
+	width: 50%;
+}
+
+.pricing-title {
+	padding: 15px;
+}
+
+.content { 
+	width:100%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+footer {
+	margin-bottom: 0;
+	padding-top: 1%; /*** Sara this is what was making the extra space on the homepage (i dropped it down to 1% padding); i think the sidebar will fix it on the offerings pg **/
+	width: 100%;
+}
+
+/**********************************
+OFFERINGS MEDIA QUERIES
+***********************************/
+
+@media screen and (max-width: 1200px) {
+body {
+    width:1000px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 700px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 980px) {
+body {
+    width:850px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 550px;
+    }
+.sidebar{
+    width:280px;
+    }
+}
+ 
+@media screen and (max-width: 750px) {
+body {
+    width:600px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 400px;
+    }
+.sidebar{
+    width:190px;
+    margin: 0 0 20px 10px;
+    }
+}
+ 
+@media screen and (max-width: 540px) {
+body {
+    width:450px;
+    margin:0 auto;
+    }
+.offerings-container {
+    width: 450px;
+    }
+.sidebar{
+    width:450px;
+    margin: 0 0 10px 0;
+    }
+}
+ 
+@media screen and (max-width: 380px) {
+body {
+	width:360px;
+    margin:0 auto;
+	}
+.offerings-container {
+    width: 360px;
+    }
+.sidebar{
+    width:360px;
+    margin: 0 0 10px 0;
+    }
+}
+
+/**********************************
+LINKS
+***********************************/
+
+.intake-form {
+	margin-top: 5%;
+	float: left;
+	font-size: 1.3em;
+}
+
+.resources {
+	margin-top:5%;
+	float: center;
+}
+
+.resources li {
+	color: #736F61;
+	padding: 5px;
+}
+
+.resources a:hover,
+.resources a:focus {
+  	text-decoration: underline;
+}
+
+
+footer .container {
+	margin-bottom: 0;
+	padding-top: 10%;
+	width: 100%;
+}
+
+/**********************************
+SIDEBAR
+***********************************/
+
+.thumbnail { padding: 2%;
+	border: 0px;
+}
+
+.panel {border: 0px;
+
+}
+
+.col-lg-9 { width: 70%;
+}
+
+.col-lg-3 { width: 30%;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active, 
+.dropdown-toggle.btn-primary{ 
+								background-color: #736939;
+								border-color: #736939;
+}
+
+h4 { padding: 1%;
+	padding-left: 3%;
+}
+
+/**********************************
+CONTACT PAGE
+***********************************/
+
+.indent-1 {float: left;}
+.indent-1 section {width: 50%; float: left;}
+
+ul li {list-style: none;}
+li {margin: .2em 0}
+
+
