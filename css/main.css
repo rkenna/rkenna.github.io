@@ -69,8 +69,8 @@ h2	{font-size: 70px;
 				background-repeat: no-repeat;
 				background-size: cover;
 				overflow: visible;
-				margin-right: -5.55%;
-				margin-left: -5.55%;
+				margin-right: -.75%;
+				margin-left: -.75%;
 				min-height: 540px;
 }
 
@@ -143,6 +143,7 @@ CONTACT
 }
 
 .contact-info {
+	color: #8C7365;
 	text-align: center;
 }
 
@@ -156,6 +157,13 @@ CONTACT
 
 .iframe {
 	text-align: center;
+}
+/*************************************
+FEEDBACK***************************/
+
+.feedback h3 {  padding-left: 1%;
+				color: #8C7365;
+
 }
 
 /**********************************
